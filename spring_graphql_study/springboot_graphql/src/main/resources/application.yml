@@ -9,7 +9,7 @@ server:
 graphql:
   servlet:
     max-query-depth: 100
-    exception-handlers-enabled: true
+    exception-handlers-enabled: false
 
   playground:
     enabled: true
