@@ -2,6 +2,7 @@ package com.graphql.study.springboot_graphql.resolver.bank;
 
 import com.graphql.study.springboot_graphql.domain.bank.BankAccount;
 import com.graphql.study.springboot_graphql.domain.bank.Client;
+import graphql.GraphQLException;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import graphql.kickstart.tools.GraphQLResolver;
 import lombok.extern.slf4j.Slf4j;
@@ -16,11 +17,14 @@ public class ClientResolver implements GraphQLResolver<BankAccount> {
     public Client client(BankAccount bankAccount){
         log.info("Requesting client data for bank account id {} ", bankAccount.getId());
 
-        return Client.builder()
-                .id(UUID.randomUUID())
-                .firstName("clientResolve")
-                .lastName("client")
-                .build();
+//        return Client.builder()
+//                .id(UUID.randomUUID())
+//                .firstName("clientResolve")
+//                .lastName("client")
+//                .build();
+
+//        throw new GraphQLException("client unavailavle");
+        throw new RuntimeException("sql select*~~~");
     }
 
 }
