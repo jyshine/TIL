@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: learn-graphql-java
+
+server:
+  http2:
+    enabled: true
+
+graphql:
+  playground:
+    enabled: true
+    headers:
+      Authorization: Bearer TOKEN
+      tabs:
+        - name: Bank account sample query
+          query: classpath:playground/bank_account.graphql
+          variables: classpath:playground/bank_account_variables.json
+  voyager:
+    enabled: true
