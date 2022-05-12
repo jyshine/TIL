@@ -1,4 +1,4 @@
-package com.graphql.study.springboot_graphql.resolver;
+package com.graphql.study.springboot_graphql.resolver.bank.query;
 
 import com.graphql.study.springboot_graphql.domain.bank.BankAccount;
 import com.graphql.study.springboot_graphql.domain.bank.Client;
@@ -35,7 +35,7 @@ public class BankAccountResolver implements GraphQLQueryResolver {
         return BankAccount.builder()
                 .id(id)
                 .currency(Currency.KOR)
-                .client(clientA)
+//                .client(clientA)
                 .build();
 
     }
