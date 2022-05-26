@@ -1,4 +1,4 @@
-# #개발일지 #JDK버전관리
+#JDK버전관리 jenv
 
 1.homebrew 업데이트
 ```
@@ -26,7 +26,6 @@ $ echo $SHELL
 ## 설정파일 추가
 ## bash일 경우
 $ echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
-
 $ echo 'eval "$(jenv init -)"' >> ~/.bash_profile
 
 ## zsh일 경우
