@@ -114,10 +114,8 @@ $ hdfs dfs -cat /user/root/output/*
 
 [Namenode information](http://localhost:9870/dfshealth.html#tab-overview)
 
-![](%23Hadoop/02.png)
+![]([%23Hadoop/02.png](https://www.guru99.com/images/Big_Data/061114_0930_Introductio1.png))
 
-
-![](%23Hadoop/061114_0930_Introductio1.png)
 
 참고 자료
 - [HDFS Simple Docker Installation Guide for Data Science Workflow | by Paras Varshney | Towards Data Science](https://towardsdatascience.com/hdfs-simple-docker-installation-guide-for-data-science-workflow-b3ca764fc94b)
