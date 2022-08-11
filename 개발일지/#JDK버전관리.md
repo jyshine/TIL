@@ -42,7 +42,10 @@ $ source ~/.zshrc
 ## 설치된 jdk 버전들 확인
 
 ## Cask 'adoptopenjdk11' is unavailable: No Cask with this name exists.
-## 이후로 동일한 명령어를 넣으면 이제는'adoptopenjdk11'이라는 이름을 가진 ## 파일을 Cask하지 못했다고 합니다. 아마도, Cask가 homebrew 라이브러리에 ## 저장된 파일을 복제해서 가져오는데 문제가 생긴 듯 합니다. 무언가를 참조할 때 ## 정확한 경로를 넣어야하는 것처럼, 단순히 설치 파일명만 기재해서는 JDK11을 
+## 이후로 동일한 명령어를 넣으면 이제는'adoptopenjdk11'이라는 이름을 가진 
+## 파일을 Cask하지 못했다고 합니다. 아마도, Cask가 homebrew 라이브러리에 
+## 저장된 파일을 복제해서 가져오는데 문제가 생긴 듯 합니다. 무언가를 참조할 때 
+## 정확한 경로를 넣어야하는 것처럼, 단순히 설치 파일명만 기재해서는 JDK11을 
 ## 불러올 수 없나봅니다. 
 ## 이러저러한 시도 끝에 찾아낸 바는, brew 명령어에 
 ## /openjdk/adoptopenjdk11 을 추가해주는 것입니다.
