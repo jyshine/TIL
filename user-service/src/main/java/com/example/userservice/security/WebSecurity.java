@@ -10,8 +10,10 @@ public class WebSecurity {
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer(){
         return (web -> {
-            web.ignoring().antMatchers("/users/**","/h2-console/**","/health-check/**","/welcome/**", "/user-service/**");
-
+//            web.ignoring().antMatchers("/users/**","/h2-console/**","/health-check/**","/welcome/**", "/user-service/**");
+//            web.addSecurityFilterChainBuilder();
         });
     }
+
+
 }
