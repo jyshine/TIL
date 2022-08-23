@@ -31,4 +31,11 @@ eureka:
 gretting:
   message: Welcome to the User Service
 
+logging:
+  level:
+    com.example.userservice: DEBUG
 
+# Token 값 입력
+token:
+  expiration_time: 86400000
+  secret: TestForCreatingSpringCloudAuthenticationJWTToken

@@ -67,7 +67,7 @@ spring:
           filters:
             - RemoveRequestHeader=Cookie
             - RewritePath=/user-service/(?<segment>.*), /$\{segment}
-
+            - AuthorizationHeaderFilter
 #        - id: first-service
 #          uri: lb://MY-FIRST-SERIVCE
 #          predicates:
@@ -91,5 +91,7 @@ spring:
 #                preLogger: true
 #                postLogger: true
 
-
+# Token 값 입력
+token:
+  secret: TestForCreatingSpringCloudAuthenticationJWTToken
 

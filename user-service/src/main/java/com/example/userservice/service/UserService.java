@@ -11,4 +11,6 @@ public interface UserService extends UserDetailsService {
 
     Iterable<UserEntity> getUserByAll();
 
+    UserDTO getUserDetailsByEmail(String username);
+
 }
