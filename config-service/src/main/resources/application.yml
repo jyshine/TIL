@@ -8,5 +8,6 @@ spring:
     config:
       server:
         git:
-          uri: file:///Users/june/dev/TIL/git-local-repo
-          default-label: master
+          uri: https://github.com/jyshine/config-repo.git
+
+

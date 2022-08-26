@@ -17,10 +17,7 @@ spring:
 
   cloud:
     config:
-      uri: http://localhost:8888/
-      name: ecommerce
-
-
+      uri: http://localhost:8888/user-service/default
 
 
 eureka:
@@ -46,3 +43,10 @@ logging:
 #token:
 #  expiration_time: 86400000
 #  secret: TestForCreatingSpringCloudAuthenticationJWTToken
+
+# spring actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, env
