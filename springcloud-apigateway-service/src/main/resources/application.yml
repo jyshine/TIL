@@ -11,6 +11,19 @@ eureka:
 spring:
   application:
     name: springcloud-apigateway-service
+
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+  config:
+    import: optional:configserver:http://127.0.0.1:8888
+
+  profiles:
+    active: dev
+
   cloud:
     gateway:
       default-filters:
@@ -92,6 +105,12 @@ spring:
 #                postLogger: true
 
 # Token 값 입력
-token:
-  secret: TestForCreatingSpringCloudAuthenticationJWTToken
+#token:
+#  secret: TestForCreatingSpringCloudAuthenticationJWTToken
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
 

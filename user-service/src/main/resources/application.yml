@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: user-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
   # H2 설정
   h2:
     console:
@@ -19,7 +24,7 @@ spring:
     import: optional:configserver:http://127.0.0.1:8888
 
   profiles:
-    active: prod
+    active: dev
 
 
 eureka:
@@ -46,9 +51,11 @@ logging:
 #  expiration_time: 86400000
 #  secret: TestForCreatingSpringCloudAuthenticationJWTToken
 
+
+
 # spring actuator
 management:
   endpoints:
     web:
       exposure:
-        include: refresh, health, beans, env
+        include: refresh, health, beans, env, busrefresh
