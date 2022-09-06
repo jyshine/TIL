@@ -1,4 +1,4 @@
-package org.example.StringTest;
+package org.example.stringTest;
 
 public class DuplicationCheck {
 

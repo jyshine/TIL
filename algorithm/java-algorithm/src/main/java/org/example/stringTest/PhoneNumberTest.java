@@ -1,9 +1,7 @@
-package org.example.StringTest;
+package org.example.stringTest;
 
 
 class Solution{
-
-
     public int checkNumber(String phone_number) {
         int answer = -1;
 
@@ -16,28 +14,29 @@ class Solution{
                 break;
             case 13:
                 if (phone_number.split("-").length != 3){
-                    break;
+                   break;
                 }
                 if (!phone_number.split("-")[0].equals("010") ){
-                    break;
+                   break;
                 }
-                if (phone_number.split("-")[1].length() != 4 || phone_number.split("-")[2].length() != 4){
+                if (phone_number.split("-")[1].length() != 4 ||
+                        phone_number.split("-")[2].length() != 4){
                     break;
                 }
                 answer = 1;
                 break;
             case 16:
-                if(!phone_number.split("-")[0].equals("+82")){
+                if (!phone_number.split("-")[0].equals("+82")) {
                     break;
                 }
-                if(!phone_number.split("-")[1].equals("10")){
+                if (!phone_number.split("-")[1].equals("10")) {
                     break;
                 }
-                if(phone_number.split("-")[2].length()+phone_number.split("-")[3].length() != 8){
+                if (phone_number.split("-")[2].length()
+                        + phone_number.split("-")[3].length() != 8){
                     break;
                 }
                 answer = 3;
-
         }
         return answer;
     }
@@ -49,12 +48,18 @@ public class PhoneNumberTest{
         String phone_number3 = "+82-10-1234-5678";
         String phone_number4 = "+82-010-1234-5678";
         String phone_number5 = "+82-010-1234-567";
+        String phone_number6 = "+82-010-123-5267";
+        String phone_number7 = "+82-010-123-5267";
+
         Solution solution = new Solution();
+
         System.out.println(solution.checkNumber(phone_number));
         System.out.println(solution.checkNumber(phone_number2));
         System.out.println(solution.checkNumber(phone_number3));
         System.out.println(solution.checkNumber(phone_number4));
         System.out.println(solution.checkNumber(phone_number5));
+        System.out.println(solution.checkNumber(phone_number6));
+        System.out.println(solution.checkNumber(phone_number7));
     }
 
 }
