@@ -43,7 +43,6 @@ class Solution{
         for(int i=0; i<array.length;i++){
             hashMap.put(i, array[i]);
         }
-        System.out.println("modValue : " +modVal);
 
         if(count == 0 || modVal==0){
             return array;
@@ -64,7 +63,6 @@ class Solution{
             if(!hashMap.containsKey(pointIndex)){
                 pointIndex = 0;
             }
-
             arrayList.add(hashMap.get(pointIndex));
 
             pointIndex++;
@@ -77,7 +75,7 @@ class Solution{
 
 public class HealingPaper {
     public static void main(String[] args) {
-        Integer[] list = {1, 2, 3, 4, 5};
+        Integer[] list = {1, 2, 3, 4, 5, 6, 7};
         int count = -1;
         Solution solution = new Solution();
         Integer[] result = solution.getResult(list, count);
