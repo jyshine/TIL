@@ -36,34 +36,40 @@ class Solution{
     Integer[] getResult(Integer[] array, int count){
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         ArrayList<Integer> arrayList = new ArrayList<>();
-        int totalCnt = array.length;
+        boolean isForward = true;
+        Integer pointIndex = 0;
+        int modVal =  count%array.length;
 
-
-        int modValue = array.length % count;
-
-        if(count ==1 ){
-            modValue = 1;
-        }
-
-        for(int i=0; i<array.length; i++){
+        for(int i=0; i<array.length;i++){
             hashMap.put(i, array[i]);
         }
-        System.out.println(modValue);
+        System.out.println("modValue : " +modVal);
 
+        if(count == 0 || modVal==0){
+            return array;
+        }
 
+        if(count<0){
+            isForward = false;
+        }
 
+        pointIndex = modVal;
 
-        int startIndex = totalCnt - (totalCnt - count);
+        if(!isForward) {
+            pointIndex = array.length + modVal;
+        }
 
-        for(int i=0; i<array.length; i++){
+        for(int i=0; i<array.length;i++){
 
-            if(startIndex>=array.length){
-                startIndex = startIndex - array.length;
+            if(!hashMap.containsKey(pointIndex)){
+                pointIndex = 0;
             }
 
-            arrayList.add(hashMap.get(startIndex));
-            startIndex++;
+            arrayList.add(hashMap.get(pointIndex));
+
+            pointIndex++;
         }
+
 
         return arrayList.toArray(new Integer[0]);
     }
