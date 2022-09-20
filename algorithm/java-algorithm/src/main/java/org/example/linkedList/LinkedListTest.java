@@ -1,16 +1,59 @@
 package org.example.linkedList;
 
-class Node {
-    int data;
-    Node next = null;
+//class Node {
+//    int data;
+//    Node next = null;
+//
+//    public Node(int data) {
+//        this.data = data;
+//    }
+//
+//    void append(int data){
+//        Node end = new Node(data);
+//        Node n = this;
+//        while(n.next != null){
+//            n = n.next;
+//        }
+//        n.next = end;
+//    }
+//
+//    void delete(int d) {
+//        Node n = this;
+//        while (n.next != null) {
+//            if (n.next.data == d) {
+//                n.next = n.next.next;
+//            }else {
+//                n = n.next;
+//            }
+//        }
+//    }
+//    void retrieve() {
+//        Node n = this;
+//        while (n.next != null) {
+//            System.out.print(n.data + " -> ");
+//            n = n.next;
+//        }
+//        System.out.println(n.data);
+//    }
+//
+//}
 
-    public Node(int data) {
-        this.data = data;
+class LinkedList {
+    Node header;
+
+    static class Node{
+        int data;
+        Node next = null;
     }
 
+    LinkedList() {
+        header = new Node();
+    }
     void append(int data){
-        Node end = new Node(data);
-        Node n = this;
+        Node end = new Node();
+        end.data = data;
+        Node n = header;
+
         while(n.next != null){
             n = n.next;
         }
@@ -18,7 +61,7 @@ class Node {
     }
 
     void delete(int d) {
-        Node n = this;
+        Node n = header;
         while (n.next != null) {
             if (n.next.data == d) {
                 n.next = n.next.next;
@@ -27,9 +70,8 @@ class Node {
             }
         }
     }
-
     void retrieve() {
-        Node n = this;
+        Node n = header.next;
         while (n.next != null) {
             System.out.print(n.data + " -> ");
             n = n.next;
@@ -39,10 +81,12 @@ class Node {
 }
 public class LinkedListTest {
     public static void main(String[] args) {
-        Node head = new Node(1);
-        head.append(2);
-        head.append(3);
-        head.append(4);
-        head.retrieve();
+        LinkedList ll = new LinkedList();
+        ll.append(1);
+        ll.append(2);
+        ll.append(3);
+        ll.append(4);
+        ll.retrieve();
+
     }
 }
