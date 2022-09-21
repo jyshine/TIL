@@ -78,6 +78,23 @@ class LinkedList {
         }
         System.out.println(n.data);
     }
+
+    void removeDups(){
+        Node n = header;
+        while(n != null && n.next != null){
+            Node r = n;
+            while(r.next != null){
+                if (n.data == r.next.data) {
+                    r.next = r.next.next;
+                } else {
+                    r = r.next;
+                }
+            }
+            n = n.next;
+        }
+
+
+    }
 }
 public class LinkedListTest {
     public static void main(String[] args) {
@@ -85,8 +102,10 @@ public class LinkedListTest {
         ll.append(1);
         ll.append(2);
         ll.append(3);
+        ll.append(2);
         ll.append(4);
         ll.retrieve();
-
+        ll.removeDups();
+        ll.retrieve();
     }
 }
