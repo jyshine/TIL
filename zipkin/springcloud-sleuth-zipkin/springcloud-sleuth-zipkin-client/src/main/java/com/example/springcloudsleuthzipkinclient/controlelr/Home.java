@@ -21,7 +21,7 @@ public class Home {
 
     @GetMapping("/zipkin")
     public String home(){
-        String format = String.format("http://172.30.1.93:5001/test");
+        String format = String.format("http://127.0.0.1:5001/test");
         ResponseEntity<String> exchange = restTemplate.exchange(format, HttpMethod.GET, null,
                 new ParameterizedTypeReference<String>() {
                 });

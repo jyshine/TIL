@@ -30,8 +30,6 @@ def default_handler(encoded_span):
 
 @app.before_request
 def log_request_info():
-    print(f"request.headers : {request.headers}")
-    print(f"request.get_data : {request.get_data()}")
     app.logger.debug('Headers: %s', request.headers)
     app.logger.debug('Body: %s', request.get_data())
 
@@ -39,7 +37,7 @@ def log_request_info():
 @app.route('/test')
 def flask_home():
     with zipkin_span(
-        service_name='api_02',
+        service_name='flask-service',
         zipkin_attrs=ZipkinAttrs(
             trace_id=request.headers['X-B3-TraceID'],
             span_id=request.headers['X-B3-SpanID'],
@@ -47,7 +45,7 @@ def flask_home():
             flags=1,
             is_sampled=request.headers['X-B3-Sampled'],
         ),
-        span_name='index_api_02',
+        span_name=request.path,
         transport_handler=default_handler,
         sample_rate=100,
         encoding=Encoding.V2_JSON
