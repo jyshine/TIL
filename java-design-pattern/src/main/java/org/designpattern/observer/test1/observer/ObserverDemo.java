@@ -1,4 +1,4 @@
-package org.designpattern.observer;
+package org.designpattern.observer.test1.observer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,15 +10,12 @@ interface Observer {
 
 class EventSource {
     List<Observer> observers = new ArrayList<>();
-
     void notifyObservers(String event){
         observers.forEach(observer -> observer.update(event));
     }
-
     void addObserver(Observer observer) {
         observers.add(observer);
     }
-
     void scanSystemIn(){
         var scanner = new Scanner(System.in);
         while (scanner.hasNextLine()) {
