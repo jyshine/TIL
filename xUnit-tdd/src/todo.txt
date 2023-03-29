@@ -19,4 +19,4 @@ https://curlunit.sourceforge.net/doc/cookstour/cookstour.htm
 2)run 실행
 3)특정 메소드 실행
 4)일반화된 내용을 뽑아서 공통적으로 처리하도록 추상화 작업
-5)테스트 코드를 만들고 테스트 코드를 테스트할 wasRun application co
+5)테스트 코드를 만들고 테스트 코드를 테스트할 wasRun application
