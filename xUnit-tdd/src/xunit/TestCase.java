@@ -15,6 +15,8 @@ public class TestCase {
 //        너무 작게 쪼갤 필요 없다.
 //        이름을 가지고 메소드 실행.
 
+        setUp();
+
         try {
             Method method = getClass().getMethod(this.name);
             method.invoke(this);
@@ -23,5 +25,8 @@ public class TestCase {
             throw new RuntimeException(e);
         }
 
+    }
+
+    public void setUp() {
     }
 }

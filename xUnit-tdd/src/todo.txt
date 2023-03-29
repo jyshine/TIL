@@ -20,3 +20,12 @@ https://curlunit.sourceforge.net/doc/cookstour/cookstour.htm
 3)특정 메소드 실행
 4)일반화된 내용을 뽑아서 공통적으로 처리하도록 추상화 작업
 5)테스트 코드를 만들고 테스트 코드를 테스트할 wasRun application
+6)눈으로 값을 보고 판단하는 방식 말고 Assert 를 생성해서 판다
+7)의도적으로 실패하는 케이스 생성
+
+[] setUp 먼저 실행
+앞에 테스트에 영향을 받지 않도록 해야한다.
+테스트 하나하나 마다 새로운 Object가 만들어지는게 맞다.
+
+1)testCase Run 할 때 setUp 기능 생성
+2)공통된 코드 리펙토링
