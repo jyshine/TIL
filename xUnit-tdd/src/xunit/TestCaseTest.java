@@ -16,8 +16,9 @@ public class TestCaseTest extends TestCase {
     public void testRunning() {
         //라이브러리에서는 assert를 사용
         Assert.assertEquals(false, wasRun.wasRun);
-        wasRun.testMethod();
+//        wasRun.testMethod();
         wasRun.run();
+        Assert.assertEquals("setUp testMethod", wasRun.log);
         Assert.assertEquals(true, wasRun.wasRun);
     }
 
@@ -25,6 +26,7 @@ public class TestCaseTest extends TestCase {
         //라이브러리에서는 assert를 사용
         Assert.assertEquals(false, wasRun.wasSetUp);
         wasRun.run();
+        Assert.assertEquals("setUp testMethod", wasRun.log);
         Assert.assertEquals(true, wasRun.wasSetUp);
     }
 
