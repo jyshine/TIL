@@ -6,10 +6,12 @@ import java.lang.reflect.Method;
 public class WasRun extends TestCase {
     public boolean wasRun;
     public boolean wasSetUp;
+    public String log;
 
     @Override
     public void setUp() {
-        wasSetUp = true;
+        this.wasSetUp = true;
+        this.log = "setUp";
     }
 
     public WasRun(String name) {
@@ -18,6 +20,7 @@ public class WasRun extends TestCase {
 
     public void testMethod() {
         this.wasRun = true;
+        this.log += " testMethod";
     }
 
 }

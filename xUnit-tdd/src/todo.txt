@@ -29,3 +29,5 @@ https://curlunit.sourceforge.net/doc/cookstour/cookstour.htm
 1)testCase Run 할 때 setUp 기능 생성
 2)공통된 코드 리펙토링
 
+[] tearDown 나중에 실행 - 비록 실패했다하더라도
+
