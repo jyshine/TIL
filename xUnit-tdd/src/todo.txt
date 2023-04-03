@@ -26,6 +26,6 @@ https://curlunit.sourceforge.net/doc/cookstour/cookstour.htm
 [] setUp 먼저 실행
 앞에 테스트에 영향을 받지 않도록 해야한다.
 테스트 하나하나 마다 새로운 Object가 만들어지는게 맞다.
-
 1)testCase Run 할 때 setUp 기능 생성
 2)공통된 코드 리펙토링
+
