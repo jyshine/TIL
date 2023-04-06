@@ -107,6 +107,7 @@ build/reports/jacoco/test/xml/jacocoTestReport.xml
 
 
 **5.보고서 확인 내용!**
+
 HTML
 - **Element**:이 열은 분석 대상인 코드 요소의 유형을 나타냅니다. 예를 들어 클래스나 메서드 등이 될 수 있습니다.
 - **Missed Instructions**:이 열은 지정된 코드 요소의 테스트 중 실행되지 않은 코드 명령의 수를 나타냅니다.
