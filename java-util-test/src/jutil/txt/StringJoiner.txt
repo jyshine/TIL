@@ -1,0 +1,25 @@
++--------------------------------+
+|          StringJoiner          |
++--------------------------------+
+| -delimiter : String            |
+| -prefix : String               |
+| -suffix : String               |
+| -value : StringBuilder         |
++--------------------------------+
+| +StringJoiner(CharSequence)    |
+| +StringJoiner(CharSequence, CharSequence, CharSequence) |
+| +add(CharSequence) : StringJoiner |
+| +merge(StringJoiner) : StringJoiner |
+| +toString() : String           |
+| +length() : int                |
++--------------------------------+
+
+위 클래스 다이어그램에서 StringJoiner 클래스는
+delimiter, prefix, suffix 및 value라는 private 멤버 변수를 가지고 있습니다.
+
+delimiter는 구분자, prefix는 문자열의 접두사, suffix는 문자열의 접미사, value는 문자열 값을 나타냅니다.
+StringJoiner 클래스는 CharSequence를 매개변수로 받는 생성자와 delimiter, prefix, suffix를 입력받는 생성자를 정의합니다.
+또한 add() 메소드를 사용하여 문자열 값을 추가하고,
+merge() 메소드를 사용하여 두 개의 StringJoiner 객체를 병합할 수 있습니다.
+마지막으로, toString() 메소드를 사용하여 최종적인 문자열 값을 반환하고,
+length() 메소드를 사용하여 문자열의 길이를 반환합니다.

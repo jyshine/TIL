@@ -1,0 +1,24 @@
+CharSequence는 인터페이스 관계로 표현
+CharSequence 인터페이스는 Java에서 문자열을 다루는 다양한 클래스들의 공통 인터페이스를 정의.
+
+
+       +---------------------+
+       |      CharSequence   |
+       +---------------------+
+                /    \
+               /      \
+              /        \
+             /          \
++----------------+   +----------------------+
+|    String      |   |    StringBuffer        |
++----------------+   +----------------------+
+|  immutable     |   |    mutable            |
+|  implements    |   |    implements          |
+|  CharSequence  |   |    CharSequence        |
++----------------+   +----------------------+
+            \               /
+             \             /
+              \           /
+               \         /
+             StringBuilder
+             mutable, implements CharSequence
