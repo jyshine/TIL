@@ -46,7 +46,7 @@ public class StringJoinerTest {
 
 
         // StringJoinerCustom 테스트
-        System.out.println("************8joinerCustom start***********");
+        System.out.println("************joinerCustom start***********");
         StringJoinerCustom joinerCustom = new StringJoinerCustom(",");
         List<String> strings2 = Arrays.asList("A", "B", "C", "D");
         strings2.forEach(s -> {
