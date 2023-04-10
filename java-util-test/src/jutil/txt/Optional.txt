@@ -1,0 +1,47 @@
++-----------------------------------------+
+|                Optional                 |
++-----------------------------------------+
+| +empty() : Optional<T>                  |
+| +of(value : T) : Optional<T>            |
+| +ofNullable(value : T) : Optional<T>    |
+| +filter(predicate : Predicate<? super T>) : Optional<T> |
+| +flatMap<U>(mapper : Function<? super T, Optional<U>>) : Optional<U> |
+| +get() : T                              |
+| +ifPresent(action : Consumer<? super T>) : void |
+| +isPresent() : boolean                  |
+| +map<U>(mapper : Function<? super T, ? extends U>) : Optional<U> |
+| +orElse(other : T) : T                  |
+| +orElseGet(supplier : Supplier<? extends T>) : T |
+| +orElseThrow<X extends Throwable>(exceptionSupplier : Supplier<X>) : T |
+| +equals(obj : Object) : boolean         |
+| +hashCode() : int                       |
+| +toString() : String                    |
++-----------------------------------------+
+
+1. of(T value):
+    주어진 값으로 새로운 Optional 객체를 생성합니다. 만약 값이 null이라면 NullPointerException이 발생합니다.
+2. ofNullable(T value) :
+    주어진 값으로 새로운 Optional 객체를 생성합니다. 값이 null이면 빈 Optional 객체를 반환합니다.
+3. empty():
+    비어있는 Optional 객체를 반환합니다.
+4. get():
+    Optional 객체에 포함된 값을 반환합니다. 값이 없는 경우 NoSuchElementException이 발생합니다
+5. ifPresent(Consumer<? super T> consumer) :
+    Optional 객체가 값을 포함하고 있다면, 주어진 Consumer 객체의 accept 메소드를 호출하여 값을 처리합니다.
+6. isPresent():
+    Optional 객체에 값이 있는지 여부를 반환합니다.
+7. orElse(other: T):
+    Optional 객체에 값이 없는 경우, 주어진 기본값을 반환합니다.
+8. orElseGet(supplier: Supplier<? extends T>):
+    Optional 객체에 값이 없는 경우, 주어진 Supplier 객체를 사용하여 기본값을 생성하여 반환합니다.
+9. orElseThrow<X extends Throwable>(exceptionSupplier: Supplier<X>):
+    Optional 객체에 값이 없는 경우, 주어진 예외 생성자를 사용하여 예외를 발생시킵니다.
+10. filter(predicate: Predicate<? super T>):
+    Optional 객체에 포함된 값을 주어진 Predicate 객체를 사용하여 검사합니다.
+    만약 값이 null이면 빈 Optional 객체를 반환합니다.
+11. map<U>(mapper: Function<? super T, ? extends U>):
+    Optional 객체에 포함된 값을 주어진 Function 객체를 사용하여 변환합니다.
+12. flatMap<U>(mapper: Function<? super T, Optional<U>>:
+    Optional 객체에 포함된 값으로 Function 객체를 호출하고, 반환된 Optional 객체를 반환합니다. 값이 없는 경우 빈 Optional 객체를 반환합니다.
+13. equals(obj: Object):
+    주어진 객체가 Optional 객체이며
