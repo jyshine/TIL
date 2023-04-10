@@ -1,5 +1,8 @@
 package jutil;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 
 
@@ -26,6 +29,14 @@ class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
 
@@ -81,7 +92,39 @@ public class ObjectsTest {
         System.out.println("str5 nonNull ? " + Objects.nonNull(str5)); // false
 
 
+        // hashCode
+        Person person1 = new Person("jun1", 30);
+        Person person2 = new Person("jun1", 30);
+        Person person3 = new Person("jun3", 32);
+        System.out.println(person1.hashCode());
+        System.out.println(Objects.hashCode(person1));
+        System.out.println(person2.hashCode());
+        System.out.println(Objects.hashCode(person2));
+        System.out.println(person3.hashCode());
+        System.out.println(Objects.hashCode(person3));
 
+        // requireNonNull
+        String str6 = null;
+        String message = "str must be not null";
+        try {
+            // Objects.requireNonNull(str6, message);
+            // 메세지 동적 생성
+            Objects.requireNonNull(str6, () -> message + " (value: " + str6 + ")");
+        } catch (NullPointerException e){
+            System.out.println(e.getMessage());
+        }
+        // requireNonNullElse
+        Person person4 = null;
+        Person person5 = new Person("default", 0);
+        System.out.println(Objects.requireNonNullElse(person4, person5));
+        // requireNonNullElseGet
+        Person defaultSupplier = Objects.requireNonNullElseGet(person4, () -> new Person("default supplier ", 1));
+        System.out.println(defaultSupplier);
+
+        // isInstanceOf
+        System.out.println(person4 instanceof Person);
+        System.out.println(person5 instanceof Person);
 
     }
+
 }
