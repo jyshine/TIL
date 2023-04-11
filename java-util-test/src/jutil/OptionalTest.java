@@ -98,7 +98,7 @@ public class OptionalTest {
         System.out.println(length.get()); // 13
 
 
-        Optional<String> messageFlatMap = Optional.of("Hello, World!");
+        Optional<String> messageFlatMap = Optional.ofNullable("Hello, World!");
         Optional<Integer> length2 = messageFlatMap.flatMap(str -> Optional.of(str.length()));
         System.out.println(length2.get()); // 13
     }

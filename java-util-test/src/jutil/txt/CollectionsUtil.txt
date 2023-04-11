@@ -1,0 +1,47 @@
+                          +----------------------+
+                          |   Collection<E>      |
+                          +----------------------+
+                          ^           ^           ^
+                         / \         / \         / \
+                        /   \       /   \       /   \
+                       /     \     /     \     /     \
+         +------------+       +------------+       +------------+
+         |    List<E> |       |    Set<E>   |       |   Queue<E>  |
+         +------------+       +------------+       +------------+
+
+
+1. sort(List<T> list):
+    리스트의 요소를 자연 순서에 따라 오름차순으로 정렬합니다.
+2. sort(List<T> list, Comparator<? super T> c):
+    지정된 비교자에 따라 리스트의 요소를 정렬합니다.
+3. reverse(List<?> list):
+    리스트의 요소 순서를 뒤집습니다.
+4. binarySearch(List<? extends Comparable<? super T>> list, T key):
+    이진 검색을 사용하여 정렬된 리스트에서 지정된 요소를 검색합니다.
+5. binarySearch(List<? extends T> list, T key, Comparator<? super T> c):
+    사용자 정의 비교자를 사용하여 정렬된 리스트에서 지정된 요소를 검색합니다.
+6. shuffle(List<?> list):
+    리스트의 요소를 무작위로 섞습니다.
+7. copy(List<? super T> dest, List<? extends T> src):
+    한 리스트의 요소를 다른 리스트로 복사합니다.
+8. fill(List<? super T> list, T obj):
+    리스트의 모든 요소를 지정된 객체로 대체합니다.
+9. addAll(Collection<? super T> c, T... elements):
+    지정된 모든 요소를 컬렉션에 추가
+10. disjoint(Collection<?> c1, Collection<?> c2):
+    두 개의 컬렉션이 공통 요소를 가지고 있지 않은지 확인합니다.
+
+11. max(Collection<? extends T> coll) / max(Collection<? extends T> coll, Comparator<? super T> comp):
+    컬렉션에서 자연 순서에 따라 최대 요소를 반환합니다. / 사용자 정의 비교자에 따라 컬렉션에서 최대 요소를 반환합니다.
+12. min(Collection<? extends T> coll) / min(Collection<? extends T> coll, Comparator<? super T> comp):
+    컬렉션에서 자연 순서에 따라 최소 요소를 반환합니다. / 사용자 정의 비교자에 따라 컬렉션에서 최소 요소를 반환합니다.
+13. replaceAll(List<T> list, T oldVal, T newVal):
+    리스트에서 하나의 요소의 모든 발생을 다른 요소로 대체합니다.
+14. singleton(T o):
+    정된 객체만 포함하는 변경할 수 없는 집합을 반환합니다.
+15. unmodifiableCollection(Collection<? extends T> c):
+    컬렉션의 변경할 수 없는 뷰를 반환합니다.
+16. synchronizedCollection(Collection<T> c):
+    지정된 컬렉션을 지원하는 스레드 안전한 컬렉션을 반환합니다.
+
+
