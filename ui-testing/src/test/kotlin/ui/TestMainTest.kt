@@ -7,7 +7,8 @@ import org.junit.jupiter.api.extension.RegisterExtension
 import org.openqa.selenium.By
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
-
+import java.util.logging.Level
+import java.util.logging.Logger
 
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
@@ -20,8 +21,10 @@ class TestMainTest{
     }
 
     companion object {
+        private val LOGGER = Logger.getLogger(TestMainTest::class.java.name)
         @JvmStatic
-        fun findElementAndAction(chromedriver:ChromeDriver, xPath:String,action:ActionEnum,inputText:String?) {
+        fun findElementAndAction(chromedriver:ChromeDriver, xPath:String, name:String ,action:ActionEnum,inputText:String?) {
+            LOGGER.log(Level.INFO, name)
             val findElement = chromedriver.findElement(By.xpath(xPath))
 
             when (action) {
@@ -41,6 +44,7 @@ class TestMainTest{
 
     @BeforeEach
     fun setUp() {
+        LOGGER.log(Level.INFO, "Initializing logging...")
     }
 
 
@@ -55,20 +59,24 @@ class TestMainTest{
         // 로그인 페이지 이동
 //        val loginButton = driver.findElement(By.xpath(XpathInfo.NAVIGATE_LOGIN_PAGE))
 //        loginButton.click()
-        findElementAndAction(driver,XpathInfo.NAVIGATE_LOGIN_PAGE, ActionEnum.CLICK,null)
+        findElementAndAction(driver,XpathInfo.NAVIGATE_LOGIN_PAGE, "NAVIGATE_LOGIN_PAGE", ActionEnum.CLICK,null)
 
         // 로그인 id 입력
 //        val idInput = driver.findElement(By.xpath(XpathInfo.INPUT_LOGIN_ID))
 //        idInput.sendKeys(TestInfo.LOGIN_ID)
-        findElementAndAction(driver,XpathInfo.INPUT_LOGIN_ID, ActionEnum.INPUT, TestInfo.LOGIN_ID)
+        findElementAndAction(driver,XpathInfo.INPUT_LOGIN_ID, "INPUT_LOGIN_ID", ActionEnum.INPUT, TestInfo.LOGIN_ID)
 
         // 로그인 password 입력
-        val passwordInput = driver.findElement(By.xpath(XpathInfo.INPUT_LOGIN_PASSWORD))
-        passwordInput.sendKeys(TestInfo.PASSWORD)
+//        val passwordInput = driver.findElement(By.xpath(XpathInfo.INPUT_LOGIN_PASSWORD))
+//        passwordInput.sendKeys(TestInfo.PASSWORD)
+        findElementAndAction(driver,XpathInfo.INPUT_LOGIN_PASSWORD, "INPUT_LOGIN_PASSWORD", ActionEnum.INPUT, TestInfo.PASSWORD)
+
 
         // 로그인 버튼 클릭
-        val login = driver.findElement(By.xpath(XpathInfo.CLICK_LOGIN_BUTTION))
-        login.click()
+//        val login = driver.findElement(By.xpath(XpathInfo.CLICK_LOGIN_BUTTION))
+//        login.click()
+        findElementAndAction(driver,XpathInfo.CLICK_LOGIN_BUTTION, "CLICK_LOGIN_BUTTION", ActionEnum.CLICK, null)
+
 
         // 공지사항 확인 및 닫기
         Thread.sleep(5000)
@@ -105,7 +113,8 @@ class TestMainTest{
     }
 
     @AfterAll
-    fun closeBrowser() {
+    fun teardown() {
+        LOGGER.log(Level.INFO, "Closing logging...")
 //        driver.close()
     }
 
