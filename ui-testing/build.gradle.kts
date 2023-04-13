@@ -1,6 +1,8 @@
 plugins {
     kotlin("jvm") version "1.8.0"
     application
+    id("io.qameta.allure") version "2.9.6"
+    id("io.qameta.allure-report") version "2.9.6"
 }
 
 group = "org.example"
@@ -11,8 +13,8 @@ repositories {
 }
 
 dependencies {
-    // selenium
-    implementation("org.seleniumhq.selenium:selenium-java:4.8.1")
+
+//    implementation("org.seleniumhq.selenium:selenium-java:4.8.0")
     // SLF4J
     implementation("org.slf4j:slf4j-api:2.0.6")
     // Logback 라이브러리 추가
@@ -23,18 +25,19 @@ dependencies {
     testImplementation("io.github.bonigarcia:webdrivermanager:5.3.2")
 
     implementation("com.google.guava:guava:31.1-jre")
-
+    // selenium
+    testImplementation("org.seleniumhq.selenium:selenium-java:4.8.1")
+    testImplementation("org.seleniumhq.selenium:selenium-http-jdk-client:4.8.1")
     testImplementation(kotlin("test"))
     testImplementation("org.slf4j:slf4j-simple:2.0.6")
 }
 
 tasks.test {
-//    System.setProperty("webdriver.chrome.driver", "/Users/sjy/Downloads/chromedriver_mac_arm64/chromedriver");
     useJUnitPlatform()
 }
 
 kotlin {
-    jvmToolchain(8)
+    jvmToolchain(11)
 }
 
 application {
