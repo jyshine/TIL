@@ -1,4 +1,4 @@
-package ui
+package ui.common
 
 import io.qameta.allure.Allure
 import org.junit.jupiter.api.extension.ExtensionContext
