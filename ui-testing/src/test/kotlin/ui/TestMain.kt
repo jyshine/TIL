@@ -245,7 +245,7 @@ class TestMain{
         // 펼치기 버튼
         findElementAndAction(
             driver,
-            XpathInfo.CLICK_CONSIGNMENT_SEARCH_MORE_LIST_BOTTON,
+            XpathInfo.ROW_CONSIGNMENT_SEARCH_LIST_PRODUCT_NO,
             "CLICK_CONSIGNMENT_SEARCH_MORE_LIST_BOTTON",
             ActionEnum.IS_NOT_EMPTY_CLICK,
             null

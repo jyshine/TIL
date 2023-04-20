@@ -1,0 +1,34 @@
+Copy code
++-------------------------------------+
+|             SimpleDateFormat        |
++-------------------------------------+
+|                                     |
+| - pattern: String                    |
+| - locale: Locale                     |
+| - calendar: Calendar                 |
+| - numberFormat: NumberFormat         |
+|                                     |
++-------------------------------------+
+|                                     |
+| + SimpleDateFormat(String pattern)  |
+| + SimpleDateFormat(String pattern,  |
+|     Locale locale)                   |
+| + applyLocalizedPattern(String      |
+|     pattern): void                   |
+| + applyPattern(String pattern): void |
+| + clone(): Object                   |
+| + equals(Object obj): boolean        |
+| + format(Date date): String          |
+| + get2DigitYearStart(): Date         |
+| + hashCode(): int                    |
+| + isLenient(): boolean               |
+| + parse(String source): Date         |
+| + set2DigitYearStart(Date startDate) |
+| + setCalendar(Calendar newCalendar): |
+|     void                            |
+| + setLenient(boolean lenient): void  |
+| + toLocalizedPattern(): String       |
+| + toPattern(): String                |
+| + toString(): String                 |
+|                                     |
++-------------------------------------+
