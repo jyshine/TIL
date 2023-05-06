@@ -20,7 +20,7 @@ class CustomerService(private val customerRepository: CustomerRepository) {
         return customerRepository.findById(id)
     }
 
-    fun deliteCustomerById(id: Long) {
+    fun deleteCustomerById(id: Long) {
         customerRepository.deleteById(id)
     }
 }

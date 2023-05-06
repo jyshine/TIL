@@ -36,12 +36,16 @@ class CustomerServiceTest @Autowired constructor(
     fun getCustomerById() {
         val allCustomers = customerService.getAllCustomers()
         for(customer in allCustomers){
-            customer.id?.let { customerService.getCustomerById(it) }
+            customer.id?.let {
+                val customerById = customerService.getCustomerById(it)
+                println(customerById)
+            }
         }
 
     }
 
     @Test
     fun deliteCustomerById() {
+
     }
 }
