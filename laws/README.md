@@ -18,7 +18,7 @@ the majority of results come from a minority of inputs.
 This theory has been applied to software development,
 suggesting that poor quality code can lead to a perception that efforts to improve quality may be ignored or undervalued, thus leading to further poor quality code. This effect cascades leading to a great decrease in quality over time.
 
-- Brooks’ Low
+- Brooks’ Law
 Adding human resources to a late software development project makes it later.
 The common phrase in delivery “Nine women can’t make a baby in one month” relates to Brooks’ Law, in particular, the fact that some kinds of work are not divisible or parallelisable.
 
