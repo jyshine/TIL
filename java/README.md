@@ -1,6 +1,6 @@
 # Java Util
 * StringJoiner
-    * [info](Optionalhttps://github.com/jyshine/TIL/blob/main/java/java-util-test/src/jutil/txt/StringJoiner.txt)
+    * [info](https://github.com/jyshine/TIL/blob/main/java/java-util-test/src/jutil/txt/StringJoiner.txt)
     * [test-code](https://github.com/jyshine/TIL/blob/main/java/java-util-test/src/jutil/StringJoinerTest.java)
 * Optional    
     * [info](https://github.com/jyshine/TIL/blob/main/java/java-util-test/src/jutil/txt/Optional.txt)
