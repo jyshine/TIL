@@ -1,6 +1,6 @@
 # Programming Language
 * Java 
-    * [Java Util](https://github.com/jyshine/TIL/tree/main/java/java-util-test/README.md) 
+    * [Java Util](https://github.com/jyshine/TIL/blob/main/java/README.md) 
 * Python
 * Go lang
 * Kotlin
