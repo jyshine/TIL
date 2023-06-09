@@ -26,3 +26,5 @@
     비동기 작업을 실행하고, Future 객체를 반환합니다.
 3. Future 처리: 
     Future 객체를 통해 작업의 결과를 기다리거나, 작업이 완료되었을 때 결과나 오류를 처리합니다.
+
+[test-code](https://github.com/jyshine/TIL/tree/main/dart/futures-async-wait/lib)
