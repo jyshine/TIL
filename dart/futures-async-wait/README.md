@@ -1,16 +1,16 @@
-- Asynchronus
- [ □ ] 
- [ □ | △ ]
- [ △ | ○ ]
- [ ○ ]
+- Asynchronus <br>
+ [ □ ] <br>
+ [ □ | △ ] <br>
+ [ △ | ○ ] <br>
+ [ ○ ] <br>
 
-- Synchronus
- [ □ ]
- [ □ ]
- [ △ ]
- [ △ ]
- [ ○ ]
- [ ○ ]
+- Synchronus <br>
+ [ □ ]<br>
+ [ □ ]<br>
+ [ △ ]<br>
+ [ △ ]<br>
+ [ ○ ]<br>
+ [ ○ ]<br>
 
 
 - Future는 비동기 작업을 나타내는 Dart의 클래스입니다. 
