@@ -22,7 +22,7 @@
 * OPEN TACTING
 * [Develop laws](https://github.com/jyshine/TIL/blob/main/laws/README.md)
 
-# Tip
+# Tips
 * [JDK Vesrsions Jenv](https://github.com/jyshine/TIL/blob/main/개발일지/%23JDK버전관리.md)
 * [Python versions Pyenv](https://github.com/jyshine/TIL/blob/main/개발일지/%23pyenv_설치.md)
 * [API Gateway Service](https://github.com/jyshine/TIL/blob/main/개발일지/%23API%20Gateway%20Service.md)
