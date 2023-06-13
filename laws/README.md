@@ -21,3 +21,7 @@
     - Adding human resources to a late software development project makes it later.
     - The common phrase in delivery “Nine women can’t make a baby in one month” relates to Brooks’ Law, in particular, the fact that some kinds of work are not divisible or parallelisable.
 
+- CAP Theorem (Brewer's Theorem)
+    - [CAP Theorem, 오해와 진실][http://eincs.com/2013/07/misleading-and-truth-of-cap-theorem/]
+
+- 
