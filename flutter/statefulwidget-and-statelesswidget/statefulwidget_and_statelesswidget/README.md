@@ -78,6 +78,12 @@
 +-------------------+  +-------------------+
 '''
 
+* What's the point? 
+  * A stateful widget is implemented by two classes: a subclass of StatefulWidget and a subclass of State. 
+  * The state class contains the widget’s mutable state and the widget’s build() method.
+  * When the widget’s state changes, the state object calls setState(), telling the framework to redraw the widget.
+
+
 * Test Code 
   * Creating UI 
     * Step 0: Create the app base code
@@ -89,4 +95,11 @@
     * Step 6: Final touch
     
   * Adding interactivity to the App
+    * Step 1: Decide which object manages the widget’s state
+    * Step 2: Subclass StatefulWidget
+    * Step 3: Subclass State
+    * Step 4: Plug the stateful widget into the widget tree
+
+
+
   
