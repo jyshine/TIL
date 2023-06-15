@@ -134,12 +134,16 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisSize: MainAxisSize.min,
       children: [
         Container(
+          padding: const EdgeInsets.all(0),
           child: IconButton(
+            padding: const EdgeInsets.all(0),
             icon: (_isFavorited
                 ? const Icon(Icons.star)
                 : const Icon(Icons.star_border)),
+            color: Colors.red[500],
             onPressed: _toggleFavorite,
           ),
         ),
