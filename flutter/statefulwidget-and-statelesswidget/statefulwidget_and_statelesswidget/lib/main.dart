@@ -36,7 +36,6 @@ class MyApp extends StatelessWidget{
         ],
       ),
     );
-
     Color color = Theme.of(context).primaryColor;
     Widget buttonSection = Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -65,19 +64,36 @@ class MyApp extends StatelessWidget{
     
     return MaterialApp(
       home: Scaffold (
-        appBar: AppBar(title: Text('Test App'),),
-        body: ListView(
-          children: [
-            const Image(
-              image: AssetImage('images/lake.jpeg'),
-              width: 600,
-              height: 240,
-              fit: BoxFit.cover,
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment(0.8, 1),
+              colors: [
+                Color(0xff1f005c),
+                Color(0xff5b0060),
+                Color(0xff870160),
+                Color(0xffac255e),
+                Color(0xffca485c),
+                Color(0xffe16b5c),
+                Color(0xfff39060),
+                Color(0xffffb56b),
+              ],
             ),
-            titleSection,
-            buttonSection,
-            textSection,
-          ],
+          ),
+          child: ListView(
+            children: [
+              const Image(
+                image: AssetImage('images/lake.jpeg'),
+                width: 600,
+                height: 240,
+                fit: BoxFit.cover,
+              ),
+              titleSection,
+              buttonSection,
+              textSection,
+            ],
+          ),
         )
       ),
     );
