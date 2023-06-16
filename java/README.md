@@ -13,5 +13,9 @@
     * [test-code](https://github.com/jyshine/TIL/blob/main/java/java-util-test/src/jutil/CalendarTest.java)
 * Char Sequence
     * [info](https://github.com/jyshine/TIL/blob/main/java/java-util-test/src/jutil/txt/CharSequence.txt)
-
+* Thread Local
+    * [test-code](https://github.com/jyshine/TIL/blob/main/java/ThreadLocalTest/src/main/java/org/example/Main.java)
+* Stream Parallel
+    * [test-code](https://github.com/jyshine/TIL/blob/main/java/java-util-test/src/jutil/streamTest/ParallelStreamTest.java)
     
+
