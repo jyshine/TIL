@@ -284,10 +284,9 @@ findElementAndAction() 기능 ChromeDriver를 사용하여 xPath를 통해 웹 �
 ```
 $프로젝트 ./gradlew allureServe    
 ```
-* https://github.com/jyshine/TIL/blob/main/kotlin/ui-testing/doc/1.png
-* https://github.com/jyshine/TIL/blob/main/kotlin/ui-testing/doc/2.png
-* https://github.com/jyshine/TIL/blob/main/kotlin/ui-testing/doc/3.png
-
+![Image](https://github.com/jyshine/TIL/blob/main/kotlin/ui-testing/doc/1.png)
+![Image](https://github.com/jyshine/TIL/blob/main/kotlin/ui-testing/doc/2.png)
+![Image](https://github.com/jyshine/TIL/blob/main/kotlin/ui-testing/doc/3.png)
 
 **개선할 점**
 * 테스트 정보 설정 파일로 보안 처리.
