@@ -4,7 +4,7 @@
 * Python
 * Go lang
 * Kotlin
-    [Kotlin+Selenium+Allure] (https://github.com/jyshine/TIL/blob/main/kotlin/ui-testing/README.md)
+    * [Kotlin+Selenium+Allure] (https://github.com/jyshine/TIL/blob/main/kotlin/ui-testing/README.md)
 * Dart
     * [Dart basic](https://github.com/jyshine/TIL/blob/main/dart/README.md)
 
