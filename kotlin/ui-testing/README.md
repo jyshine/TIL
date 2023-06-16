@@ -48,7 +48,8 @@
 
 화이트박스 테스팅에서 코드 커버리지(code coverage)는 소프트웨어의 테스트 케이스가 얼마나 많은 코드를 실행하고 테스트했는지를 나타내는 지표입니다.
 코드 커버리지는 소프트웨어 개발자가 테스트 케이스가 충분한지, 어떤 부분에서 추가 테스트가 필요한지, 그리고 코드의 품질을 어떻게 개선할 수 있는지를 판단하는 데 도움이 됩니다. 일반적으로 코드 커버리지는 백분율로 표시되며, 테스트된 코드 라인 수와 전체 코드 라인 수의 비율로 계산됩니다.
-코드 커버리지를 높이는 것은 소프트웨어의 품질을 높이는 데 중요합니다. 그러나 **코드 커버리지가 100%라고 해서 모든 결함이 발견되는 것은 아닙니다.**따라서 **코드 커버리지는 소프트웨어의 테스트 케이스에 대한 일부 정보를 제공하지만, 결함이나 취약점을 발견하기 위해서는 다른 테스트 기법들과 함께 사용해야 합니다.**
+코드 커버리지를 높이는 것은 소프트웨어의 품질을 높이는 데 중요합니다. 
+그러나 **코드 커버리지가 100%라고 해서 모든 결함이 발견되는 것은 아닙니다. 따라서 코드 커버리지는 소프트웨어의 테스트 케이스에 대한 일부 정보를 제공하지만, 결함이나 취약점을 발견하기 위해서는 다른 테스트 기법들과 함께 사용해야 합니다.**
 
 # Code Coverage란?
 Code coverage는 소프트웨어 테스트에서 사용되는 측정 지표 중 하나입니다. 코드 커버리지는 소프트웨어 코드가 테스트 케이스에 의해 실행된 비율을 나타냅니다. 즉, 코드 커버리지는 **test suite** 가 실행된 후에 코드베이스의 얼마나 많은 부분이 실행 되었는지를 나타냅니다.
@@ -126,11 +127,23 @@ build/reports/jacoco/test/xml/jacocoTestReport.xml
 * 프로젝트 빌드 스크립트에 테스트 프로젝트 실행 Command 추가하여 테스트 및 리포트 생성 가능 
 
 **Kotlin 프로젝트로 Selenium 이용해 UI Test 자동화 하기**
-* 테스트 영상 (위탁상품 조회 후 상품 상세 확인)
+* [테스트 영상 (위탁상품 조회 후 상품 상세 확인)](https://github.com/jyshine/TIL/blob/main/kotlin/ui-testing/doc/%ED%99%94%EB%A9%B4%20%EA%B8%B0%EB%A1%9D%202023-04-20%20%EC%98%A4%EC%A0%84%208.20.06.mov)
 
 ```
-프로젝트 구성
-└── src├── main└── test├── kotlin│   └── ui│   ├── TestMain.kt → 테스트 실행│   ├── common│   │   ├── ScreenshotOnError.kt → 오류 발생시 스크린샷 │   │   ├── TestInfo.kt → 테스트에 필요한 정보 (보안을 위해 추후 환경변수로 빼기)│   │   └── XpathInfo.kt → 테스트 UI xpath 정보│   └── eum│   └── ActionEnum.kt → Selenium 이벤트└── resources└── chromedriver → chrome driver
+└── src
+├── main
+└── test
+├── kotlin
+│   └── ui
+│   ├── TestMain.kt → 테스트 실행
+│   ├── common
+│   │   ├── ScreenshotOnError.kt → 오류 발생시 스크린샷 
+│   │   ├── TestInfo.kt → 테스트에 필요한 정보 (보안을 위해 추후 환경변수로 빼기)
+│   │   └── XpathInfo.kt → 테스트 UI xpath 정보
+│   └── eum
+│   └── ActionEnum.kt → Selenium 이벤트
+└── resources
+└── chromedriver → chrome driver
 
 ```
 
@@ -271,7 +284,9 @@ findElementAndAction() 기능 ChromeDriver를 사용하여 xPath를 통해 웹 �
 ```
 $프로젝트 ./gradlew allureServe    
 ```
-
+* https://github.com/jyshine/TIL/blob/main/kotlin/ui-testing/doc/1.png
+* https://github.com/jyshine/TIL/blob/main/kotlin/ui-testing/doc/2.png
+* https://github.com/jyshine/TIL/blob/main/kotlin/ui-testing/doc/3.png
 
 
 **개선할 점**
