@@ -29,7 +29,7 @@
 
 *  Class Diagram
 
-'''
+```
                                         +---------------------+
                                         |     Widget          |
                                         +---------------------+
@@ -76,7 +76,7 @@
 +-------------------+  +-------------------+
 |       State       |  |      ...          |
 +-------------------+  +-------------------+
-'''
+```
 
 * What's the point? 
   * A stateful widget is implemented by two classes: a subclass of StatefulWidget and a subclass of State. 
