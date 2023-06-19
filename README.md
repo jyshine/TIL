@@ -19,7 +19,9 @@
 # Design Pattern
 
 # Flutter
-*  [StatefulWidget and StatelessWidget](https://github.com/jyshine/TIL/tree/main/flutter/statefulwidget-and-statelesswidget/statefulwidget_and_statelesswidget)
+* [UI layout](https://github.com/jyshine/TIL/tree/main/flutter/README.md)
+* [StatefulWidget and StatelessWidget](https://github.com/jyshine/TIL/tree/main/flutter/statefulwidget-and-statelesswidget/statefulwidget_and_statelesswidget)
+
 
 # ETC
 * OPEN TACTING
