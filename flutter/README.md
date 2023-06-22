@@ -17,6 +17,7 @@
             Creates a box decoration.
             const
             ```
-            
-            * [LinearGradient](https://api.flutter.dev/flutter/painting/LinearGradient-class.html)
 
+        * [LinearGradient](https://api.flutter.dev/flutter/painting/LinearGradient-class.html)
+        * [RadialGradient](https://api.flutter.dev/flutter/painting/RadialGradient-class.html)
+        * [SweepGradient](https://api.flutter.dev/flutter/painting/SweepGradient-class.html)
