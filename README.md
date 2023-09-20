@@ -1,4 +1,4 @@
-# Programming Language
+# 1.Programming Language
 * Java 
     * [Java Util](https://github.com/jyshine/TIL/blob/main/java/README.md) 
 * Python
@@ -8,20 +8,21 @@
 * Dart
     * [Dart basic](https://github.com/jyshine/TIL/blob/main/dart/README.md)
 
-# Spring Framework
-* Spring Cloud
-* Spring Batch
-
-# Apache Kafka
-
-# Databases
-
-# Design Pattern
-
-# Flutter
+# 2.Framework & Library
+## 2.1.Spring Framework
+## 2.2.Flutter
 * [UI layout](https://github.com/jyshine/TIL/tree/main/flutter/README.md)
 * [StatefulWidget and StatelessWidget](https://github.com/jyshine/TIL/tree/main/flutter/statefulwidget-and-statelesswidget/statefulwidget_and_statelesswidget)
 
+# 3.Databases
+## 3.1.RDB
+## 3.2.NoSQL
+
+
+# 4.Software Design & Architecture
+## 4.1.GOF Design Patterns
+## 4.2.Message Brokers
+### 4.2.1.Kafka
 
 # ETC
 * OPEN TACTING
