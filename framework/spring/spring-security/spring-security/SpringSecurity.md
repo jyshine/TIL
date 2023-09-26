@@ -19,8 +19,9 @@ It also provides integration with other libraries to simplify its usage.
     - [Password Storage](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/doc/PasswordStorage.md) 
     
 - Protection Against Exploits
-    - CSRF
-    - HTTP Headers
-    - HTTP Requests
+  - 일반적인 보안 취약점에 대한 보호를 제공합니다. 가능한 경우, 이러한 보호 기능은 기본적으로 활성화되어 있습니다.
+      - CSRF
+      - HTTP Headers
+      - HTTP Requests
   
 - Integrations
