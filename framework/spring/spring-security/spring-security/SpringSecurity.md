@@ -10,15 +10,15 @@ It also provides integration with other libraries to simplify its usage.
 또한, 다른 라이브러리와 통합을 제공하여 사용을 간소화 합니다.
 
 ### 주요 특징
+
 - Authentication :
   - Spring Security는 인증에 대한 포괄적인 지원을 제공합니다. 
   - 인증은 특정 리소스에 액세스하려는 사용자의 신원을 확인하는 방법입니다. 
   - 사용자를 인증하는 일반적인 방법은 사용자가 사용자 이름과 비밀번호를 입력하도록 요구하는 것입니다. 
   - 인증이 수행되면 우리는 사용자의 신원을 알고 권한 부여를 수행할 수 있게 됩니다.
-    - Password Storage 
-  
+    - [Password Storage](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/doc/PasswordStorage.md) 
+    
 - Protection Against Exploits
-  - 
     - CSRF
     - HTTP Headers
     - HTTP Requests
