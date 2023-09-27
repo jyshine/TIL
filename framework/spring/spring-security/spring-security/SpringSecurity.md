@@ -10,7 +10,6 @@ It also provides integration with other libraries to simplify its usage.
 또한, 다른 라이브러리와 통합을 제공하여 사용을 간소화 합니다.
 
 ### 주요 특징
-
 - Authentication :
   - Spring Security는 인증에 대한 포괄적인 지원을 제공합니다. 
   - 인증은 특정 리소스에 액세스하려는 사용자의 신원을 확인하는 방법입니다. 
@@ -21,7 +20,25 @@ It also provides integration with other libraries to simplify its usage.
 - Protection Against Exploits
   - 일반적인 보안 취약점에 대한 보호를 제공합니다. 가능한 경우, 이러한 보호 기능은 기본적으로 활성화되어 있습니다.
       - [CSRF](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/doc/CSRF.md)
-      - HTTP Headers
-      - HTTP Requests
+      - [HTTP Headers](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/doc/HTTPHeaders.md)
+      - [HTTP Requests](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/doc/HTTPHeaders.md)
   
 - Integrations
+  - Cryptography
+  - Spring Data
+  - Java's Concurrency APIs
+  - Jackson
+  - Localization
+  
+### Architecture
+- [A Review of Filters](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/main/resources/doc/Filters.md)
+- DelegatingFilterProxy
+- FilterChainProxy
+- SecurityFilterChain
+- Security Filters
+- Adding a Custom Filter to the Filter Chain
+- Handling Security Exceptions
+- Saving Requests Between Authentication
+- Logging
+
+  
