@@ -56,11 +56,10 @@
 ## CSRF Considerations
     1. Logging In
     2. Logging Out
-        
     3. CSRF and Session Timeouts
         1) JavaScript 요청을 통한 갱신
         2) JavaScript 만료 알려주고 사용자가 재갱신 클릭
-        3)  CSRF 토큰을 쿠키에 저장, CSRF 토큰이 세션을 초과하여 유지
+        3) CSRF 토큰을 쿠키에 저장, CSRF 토큰이 세션을 초과하여 유지
     4. Multipart(file upload)
         1) Avoid Reading the Body: 이 경우, CSRF 토큰을 body 읽지 않으며 대신 다른 방법으로 토큰을 포함하도록 요청을 구성해야 합니다. 이 방법은 좀 더 복잡할 수 있으며, 일부 상황에서 적용하기 어려울 수 있습니다.
         2) Prevent External Uploads: 이 방법은 업로드된 파일을 처리하기 전에 요청을 검사하여 외부 사이트에서의 업로드를 방지하는 것입니다. Spring Security와 같은 보안 라이브러리를 사용하면 이러한 검사를 수행할 수 있습니다. 이 방법은 CSRF 공격을 방지하면서도 파일 업로드를 지원합니다.
