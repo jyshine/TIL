@@ -32,7 +32,7 @@ It also provides integration with other libraries to simplify its usage.
   
 ### Architecture
 - [A Review of Filters](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/doc/Filters.md)
-- DelegatingFilterProxy
+- [DelegatingFilterProxy](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/doc/DelegatingFilterProxy.md)
 - FilterChainProxy
 - SecurityFilterChain
 - Security Filters
