@@ -31,7 +31,7 @@ It also provides integration with other libraries to simplify its usage.
   - Localization
   
 ### Architecture
-- [A Review of Filters](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/main/resources/doc/Filters.md)
+- [A Review of Filters](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/doc/Filters.md)
 - DelegatingFilterProxy
 - FilterChainProxy
 - SecurityFilterChain

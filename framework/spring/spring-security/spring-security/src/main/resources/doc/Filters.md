@@ -1,6 +1,6 @@
 # Filters
 
-![filterchain.png](src%2Fmain%2Fresources%2Fimg%2Ffilterchain.png)
+![filterchain.png](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/img/filterchain.png)
 
 - Spring Security 의 서블릿 지원은 Servlet Filters를 기반으로 한다.
 
