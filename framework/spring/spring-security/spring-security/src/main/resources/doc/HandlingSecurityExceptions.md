@@ -24,20 +24,20 @@ ExceptionTranslationFilter는 이 중 하나로써 예외를 처리하는 역할
 ```
 try {
 	filterChain.doFilter(request, response); # 1 
-} catch (AccessDeniedException | AuthenticationException ex) {
+} catch (AccessDeniedException | AuthenticationException ex) { 
 	if (!authenticated || ex instanceof AuthenticationException) {
-		startAuthentication(); 
+		startAuthentication(); # 2
 	} else {
-		accessDenied(); 
+		accessDenied();  # 3
 	}
 }
 
 
 ```
 
-#1 "A Review of Filters"에서 설명한대로 FilterChain.doFilter(request, response)를 호출하는 것은 애플리케이션의 나머지 부분을 호출하는 것과 동등합니다. 즉, 애플리케이션의 다른 부분(FilterSecurityInterceptor 또는 메소드 보안)에서 AuthenticationException이나 AccessDeniedException을 던지면 이곳에서 잡혀 처리됩니다. 이러한 예외는 ExceptionTranslationFilter에서 적절한 HTTP 응답으로 변환되어 처리됩니다.
-#2 만약 사용자가 인증되지 않았거나 AuthenticationException이 발생했다면, 인증 과정을 시작합니다. 이것은 사용자가 현재 로그인되지 않았거나 로그인이 실패한 경우에 해당합니다. 사용자의 인증 상태를 확인하고 필요한 인증 작업을 수행하기 위해 이 단계에서 시작됩니다. 이것은 Spring Security에서 사용자의 인증을 수행하기 위한 과정을 시작하는 것을 의미합니다.
-#3 그렇지 않다면 "Access Denied"가 발생했다는 의미입니다. 사용자의 인증은 성공했지만 해당 리소스 또는 작업에 대한 권한이 없을 경우에 이 단계에서 처리됩니다. 이러한 경우에는 AccessDeniedHandler를 호출하여 액세스 거부에 대한 처리를 합니다. 이 핸들러는 사용자가 요청한 작업에 대한 충분한 권한이 없을 때 호출되어 적절한 응답을 생성하고 사용자에게 적절한 오류 메시지를 제공합니다.
+- #1 "A Review of Filters"에서 설명한대로 FilterChain.doFilter(request, response)를 호출하는 것은 애플리케이션의 나머지 부분을 호출하는 것과 동등합니다. 즉, 애플리케이션의 다른 부분(FilterSecurityInterceptor 또는 메소드 보안)에서 AuthenticationException이나 AccessDeniedException을 던지면 이곳에서 잡혀 처리됩니다. 이러한 예외는 ExceptionTranslationFilter에서 적절한 HTTP 응답으로 변환되어 처리됩니다.
+- #2 만약 사용자가 인증되지 않았거나 AuthenticationException이 발생했다면, 인증 과정을 시작합니다. 이것은 사용자가 현재 로그인되지 않았거나 로그인이 실패한 경우에 해당합니다. 사용자의 인증 상태를 확인하고 필요한 인증 작업을 수행하기 위해 이 단계에서 시작됩니다. 이것은 Spring Security에서 사용자의 인증을 수행하기 위한 과정을 시작하는 것을 의미합니다.
+- #3 그렇지 않다면 "Access Denied"가 발생했다는 의미입니다. 사용자의 인증은 성공했지만 해당 리소스 또는 작업에 대한 권한이 없을 경우에 이 단계에서 처리됩니다. 이러한 경우에는 AccessDeniedHandler를 호출하여 액세스 거부에 대한 처리를 합니다. 이 핸들러는 사용자가 요청한 작업에 대한 충분한 권한이 없을 때 호출되어 적절한 응답을 생성하고 사용자에게 적절한 오류 메시지를 제공합니다.
 
 ```
 "Handling Security Exceptions"에서 설명한 대로, 인증되지 않은 상태로 인증이 필요한 리소스에 대한 요청이 올 때, 
