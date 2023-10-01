@@ -42,3 +42,14 @@ It also provides integration with other libraries to simplify its usage.
 - [Logging](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/doc/Logging.md)
 
   
+### Servlet Authentication Architecture
+- SecurityContextHolder - SecurityContextHolder는 누가 인증되었는지에 대한 세부 정보를 Spring Security에서 저장하는 곳입니다.
+- SecurityContext - SecurityContextHolder에서 얻어지며 현재 인증된 사용자의 Authentication을 포함합니다.
+- Authentication - AuthenticationManager의 입력으로 사용되어 사용자가 인증을 위해 제공한 자격 증명이나 SecurityContext에서 현재 사용자입니다.
+- GrantedAuthority - Authentication에 부여된 권한(예: 역할, 범위 등)
+- AuthenticationManager - Spring Security의 필터가 인증을 수행하는 방법을 정의한 API입니다.
+- ProviderManager - AuthenticationManager의 가장 일반적인 구현입니다.
+- AuthenticationProvider - ProviderManager에서 특정 유형의 인증을 수행하기 위해 사용됩니다.
+- AuthenticationEntryPoint을 사용하여 자격 증명 요청 - 클라이언트로부터 자격 증명을 요청하기 위해 사용됩니다(예: 로그인 페이지로 리디렉션, WWW-Authenticate 응답을 보내기 등).
+- AbstractAuthenticationProcessingFilter - 인증에 사용되는 기본 필터입니다. 이것은 또한 인증의 고수준 흐름과 각 부분이 어떻게 함께 작동하는지에 대한 좋은 개요를 제공합니다.
+
