@@ -1,6 +1,6 @@
 # 1.Programming Language
 * Java 
-    * [Java Util](https://github.com/jyshine/TIL/blob/main/java/README.md) 
+    * [Java Util](https://github.com/jyshine/TIL/tree/main/language/java/README.md) 
 * Python
 * Go lang
 * Kotlin
@@ -26,9 +26,9 @@
 
 
 # 4.Software Design & Architecture
-### 4.1.GOF Design Patterns
-### 4.2.Message Brokers
-### 4.2.1.Kafka
+  ### 4.1.GOF Design Patterns
+  ### 4.2.Message Brokers
+  ### 4.2.1.Kafka
 
 # ETC
 * OPEN TACTING
@@ -42,4 +42,7 @@
 * [Big-O](https://github.com/jyshine/TIL/blob/main/개발일지/%23Big-O.md)
 * [Hadoop](https://github.com/jyshine/TIL/blob/main/개발일지/%23Hadoop.md)
 * [Hadoop Issue](https://github.com/jyshine/TIL/blob/main/개발일지/%23Hadoop_Issue.md)
-
+* [script for git merge](https://github.com/jyshine/TIL/blob/main/개발일지/%23script%20for%20git%20merge.md)
+* [Code Coverage](https://github.com/jyshine/TIL/blob/main/개발일지/Code%20Coverage%20코드%20커버리지.md)
+* [Linux alias for Git command](https://github.com/jyshine/TIL/blob/main/개발일지/%23Linux%20alias%20for%20Git%20command.md)
+* [M1_homebrew_설치](https://github.com/jyshine/TIL/blob/main/개발일지/%23M1_homebrew_설치.md)
