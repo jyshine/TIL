@@ -8,7 +8,7 @@ import java.util.Base64;
 public class test {
     public static void main(String[] args) throws Exception {
         // 특정한 문자열을 기반으로 해시 생성
-        String inputString = "3o3TaskShinJunYoung";
+        String inputString = "ablyTaskShinJunYoung";
         byte[] hashedBytes = sha256Hash(inputString);
 
         // SHA-256 해시 값을 기반으로 RSA 키 쌍 생성
