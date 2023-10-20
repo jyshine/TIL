@@ -53,3 +53,5 @@ It also provides integration with other libraries to simplify its usage.
 - AuthenticationEntryPoint을 사용하여 자격 증명 요청 - 클라이언트로부터 자격 증명을 요청하기 위해 사용됩니다(예: 로그인 페이지로 리디렉션, WWW-Authenticate 응답을 보내기 등).
 - AbstractAuthenticationProcessingFilter - 인증에 사용되는 기본 필터입니다. 이것은 또한 인증의 고수준 흐름과 각 부분이 어떻게 함께 작동하는지에 대한 좋은 개요를 제공합니다.
 
+
+![security architecture.png](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/img/SpringSecurityArchitecture.png)
