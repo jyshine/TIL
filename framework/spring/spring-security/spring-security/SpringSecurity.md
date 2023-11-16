@@ -55,3 +55,27 @@ It also provides integration with other libraries to simplify its usage.
 
 
 ![security architecture.png](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/img/SpringSecurityArchitecture.png)
+
+
+
+
+### Refresh Token
+- 액세스 토큰(Access Token)의 유효기간은 1시간 ~ 2시간
+- 액세스 토큰은 보호된 데이터에 대한 접근 권한을 증명하는 값이므로 외부에 노출되는 경우 치명적인 보안 이슈가 발생하게 됩니다.
+- 때문에 만약 탈취되더라도, 해커에 의해 남용될 수 있는 시간을 최소화 하기 위하여 유효기간이 짧게 설정되어있습니다.
+- 액세스 토큰이 발급될 때 함께 제공됩니다.
+- 리프레시 토큰을 사용하여 액세스 토큰을 재발급 받을 수 있습니다.
+- 리프레시 토큰의 유효기간은 7일 ~ 14일입니다.
+- 한 번 사용된 리프레시 토큰은 폐기됩니다.
+
+1. Client 액세스 토큰 발급요청
+2. API 서버에서 액세스토큰 + 리프레시 토큰 발급
+3. 액세스 토큰 사용
+4. Invalid Token Error 액세스토큰 만료
+5. 리스레시 토큰으로 재발급요청
+6. 액세스 토큰과 리스레시토큰 재발행
+
+- 고민해야할 부분
+  - Refresh Token을 DB에 저장.
+  - 쿠키 사용하여 토큰 저장.
+
