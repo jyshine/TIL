@@ -46,3 +46,4 @@
 * [Code Coverage](https://github.com/jyshine/TIL/blob/main/개발일지/Code%20Coverage%20코드%20커버리지.md)
 * [Linux alias for Git command](https://github.com/jyshine/TIL/blob/main/개발일지/%23Linux%20alias%20for%20Git%20command.md)
 * [M1_homebrew_설치](https://github.com/jyshine/TIL/blob/main/개발일지/%23M1_homebrew_설치.md)
+* [클린코드 요약 및 예시](https://github.com/jyshine/TIL/blob/main/개발일지/클린%20코드%20요약.md)
