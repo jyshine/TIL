@@ -47,3 +47,4 @@
 * [Linux alias for Git command](https://github.com/jyshine/TIL/blob/main/개발일지/%23Linux%20alias%20for%20Git%20command.md)
 * [M1_homebrew_설치](https://github.com/jyshine/TIL/blob/main/개발일지/%23M1_homebrew_설치.md)
 * [클린코드 요약 및 예시](https://github.com/jyshine/TIL/blob/main/개발일지/클린%20코드%20요약.md)
+* [Frontend, Backend 분리할 때 CORS 및 쿠키 문제](https://github.com/jyshine/TIL/blob/main/%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/Frontend%2C%20Backend%20%EB%B6%84%EB%A6%AC%ED%95%A0%20%EB%95%8C%20CORS%20%EB%B0%8F%20%EC%BF%A0%ED%82%A4%20%EB%AC%B8%EC%A0%9C.md)
