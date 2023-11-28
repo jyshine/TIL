@@ -1,6 +1,7 @@
 # 1.Programming Language
 * Java 
-    * [Java Util](https://github.com/jyshine/TIL/tree/main/language/java/README.md) 
+    * [Java Util](https://github.com/jyshine/TIL/tree/main/language/java/README.md)
+    * [JPA](https://github.com/jyshine/TIL/tree/main/language/java/jpa) 
 * Python
 * Go lang
 * Kotlin
