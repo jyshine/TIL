@@ -50,5 +50,4 @@
 * [Frontend, Backend 분리할 때 CORS 및 쿠키 문제](https://github.com/jyshine/TIL/blob/main/%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/Frontend%2C%20Backend%20%EB%B6%84%EB%A6%AC%ED%95%A0%20%EB%95%8C%20CORS%20%EB%B0%8F%20%EC%BF%A0%ED%82%A4%20%EB%AC%B8%EC%A0%9C.pdf)
 * [Discussion SpringBoot Service Layer](https://github.com/jyshine/TIL/blob/main/개발일지/Spring%20Service%20Layer에%20대한%20고찰.md)
 * [WebFlux](https://github.com/jyshine/TIL/blob/main/%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/WebFlux.md)
-* [SpringBoot&Elasticsearch](https://github.com/jyshine/TIL/blob/main/개발일지/%23ELK%20%23SpringBoot.md)
-* [SpringBoot&Elasticsearch-TestCode](https://github.com/jyshine/TIL/tree/main/spring-log-elk)
+
