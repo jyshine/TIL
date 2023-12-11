@@ -79,3 +79,7 @@ It also provides integration with other libraries to simplify its usage.
   - Refresh Token을 DB에 저장.
   - 쿠키 사용하여 토큰 저장.
 
+![authentication](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/doc/spring-boot-jwt-authentication-spring-security-architecture.png)
+![authentication-flow](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/doc/spring-boot-spring-security-jwt-authentication-flow.png)
+![refresh-token](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/src/main/resources/doc/spring-boot-refresh-token-jwt-example-flow.png)
+

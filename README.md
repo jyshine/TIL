@@ -14,8 +14,7 @@
 * [Spring Security](https://github.com/jyshine/TIL/blob/main/framework/spring/spring-security/spring-security/SpringSecurity.md)
   
 ### 2.2.Flutter
-* [UI layout](https://github.com/jyshine/TIL/tree/main/flutter/README.md)
-* [StatefulWidget and StatelessWidget](https://github.com/jyshine/TIL/tree/main/flutter/statefulwidget-and-statelesswidget/statefulwidget_and_statelesswidget)
+* [Flutter Tutorial](https://github.com/jyshine/Flutter-Course-Resources)
 
 ### 2.3.Frontend
 * [VueJS](https://github.com/jyshine/vue_3_tutorial)
