@@ -9,5 +9,5 @@ services:
       - DIR_RESULT=/data/bithumb/result
       - FILE_OUT=merged_XRP_data.csv
     volumes:
-      - ${DATA_DIR}:/usr/src/app/data
+      - /data/app:/usr/src/app
     command: python ./main.py
