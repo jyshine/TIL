@@ -3,10 +3,13 @@ import pandas as pd
 from datetime import datetime
 
 # 파일이 저장된 디렉토리 경로
-directory = '/Users/jun/data/bithumb'
+# directory = '/Users/june/data/bithumb/bithumb'
+directory = os.getenv("DIR_IN")
 
 # 결과 파일이 저장될 디렉토리 경로
-output_dir = '/Users/jun/dev/analyze-01/data'
+# output_dir = '/Users/june/data/bithumb/bithumb-merge'
+output_dir = os.getenv("DIR_OUT")
+output_file = os.getenv("FILE_OUT")
 
 # 디렉토리 내에서 'XRP_'로 시작하는 모든 파일 이름 리스트를 가져오기
 file_names = [file for file in os.listdir(directory) if file.startswith('XRP_') and file.endswith('.csv')]
@@ -30,7 +33,7 @@ merged_df = merged_df.sort_values(by='candle_date_time_kst')
 now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
 # 저장할 디렉토리 경로와 파일명을 결합하여 완전한 파일 경로 생성
-output_file = os.path.join(output_dir, f'merged_XRP_data_{now}.csv')
+output_file = os.path.join(output_dir, output_file)
 
 # 합쳐진 데이터를 새로운 CSV 파일로 저장
 merged_df.to_csv(output_file, index=False)

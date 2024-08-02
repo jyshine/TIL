@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 import pandas as pd
@@ -9,7 +10,12 @@ from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
 
 # 파일 경로 설정
-csv_file_path = '/Users/jun/dev/analyze-01/data/merged_XRP_data.csv'
+output_dir = os.getenv("DIR_OUT")
+output_file = os.getenv("FILE_OUT")
+result_dir = os.getenv("DIR_RESULT")
+# 파일 경로
+csv_file_path = output_dir+"/5_"+output_file
+
 
 # CSV 파일 읽기
 df = pd.read_csv(csv_file_path)
@@ -135,6 +141,6 @@ plt.tight_layout(rect=[0, 0, 1, 0.96])
 now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
 # 그래프를 크게 저장
-output_path = now+'_prediction_plot.png'  # 현재 디렉토리에 저장
+output_path = result_dir+"/"+now+'_prediction_plot.png'  # 현재 디렉토리에 저장
 plt.savefig(output_path, bbox_inches='tight')
 plt.show()
