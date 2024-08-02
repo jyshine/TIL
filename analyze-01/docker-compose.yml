@@ -4,7 +4,7 @@ services:
   analyze-app:
     build: .
     environment:
-      - DIR_IN=/data/bithumb/minute
+      - DIR_IN=/data/bithumb/minute/bithumb
       - DIR_OUT=/data/bithumb/merge
       - DIR_RESULT=/data/bithumb/result
       - FILE_OUT=merged_XRP_data.csv
